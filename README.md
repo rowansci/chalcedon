@@ -1,10 +1,11 @@
 # Chalcedon
 
-[![License](https://img.shields.io/github/license/rowansci/chalcedon)](https://github.com/rowansci/chalcedon/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/rowansci/chalcedon?v=1)](https://github.com/rowansci/chalcedon/blob/master/LICENSE)
 [![Powered by: uv](https://img.shields.io/badge/powered%20by-uv-purple)](https://docs.astral.sh/uv)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 [![Typing: ty](https://img.shields.io/badge/typing-ty-EFC621.svg)](https://github.com/astral-sh/ty)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/rowansci/chalcedon/test.yml?branch=master&logo=github-actions)](https://github.com/rowansci/chalcedon/actions)
+[![PyPI](https://img.shields.io/pypi/v/chalcedon)](https://pypi.org/project/chalcedon/)
 
 *Fast, memory-efficient Butina clustering and train/validation/test splitting for chemical datasets. Use this package to minimize data leakage when splitting chemical data to improve the evaluation and generalizability of your models.*
 
