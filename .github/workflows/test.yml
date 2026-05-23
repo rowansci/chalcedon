@@ -1,0 +1,32 @@
+name: Test
+
+on:
+  pull_request: {}
+  push:
+    branches: master
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        python-version: ['3.14']
+        os: [ubuntu-latest]
+
+    name: Python ${{ matrix.os }} ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v8.1.0
+        with:
+          enable-cache: true
+
+      - name: Install Python
+        run: uv python install ${{ matrix.python-version }}
+
+      - run: uv run --group benchmark ruff format .
+      - run: uv run --group benchmark ruff check .
+      - run: uv run --group benchmark ty check
+      - run: uv run --group benchmark pytest
