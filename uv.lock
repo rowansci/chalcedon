@@ -41,7 +41,7 @@ sdist = { url = "https://files.pythonhosted.org/packages/a3/56/aed08e340dbbe8c54
 
 [[package]]
 name = "chalcedon"
-version = "0.0.1"
+version = "0.0.2"
 source = { editable = "." }
 dependencies = [
     { name = "numpy" },
